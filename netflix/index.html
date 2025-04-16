@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clon Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-black px-4 py-3">
+        <a class="navbar-brand fs-3" href="#">🎬 MiFlix</a>
+        <!-- Enlace a la lista guardada -->
+        <a href="#" class="btn btn-outline-light ms-3" id="savedMoviesBtn">Lista Guardada</a>
+
+        <!-- Botón de inicio de sesión -->
+        <button class="btn btn-outline-light ms-3" id="loginBtn">Iniciar sesión</button>
+    </nav>
+
+    <!-- Título de Bienvenida -->
+    <div class="container mt-4">
+        <h1 class="text-center">¡Bienvenido a MiFlix!</h1>
+        <p class="text-center mb-4">Explora las mejores películas y series. ¡Busca lo que más te guste!</p>
+    </div>
+
+    <!-- Barra de Búsqueda -->
+    <div class="container mb-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar películas...">
+    </div>
+
+    <!-- Sección Películas -->
+    <div class="container mt-4">
+        <h2 class="mb-4">Populares Ahora</h2>
+        <div id="movie-grid" class="row g-3"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" class="img-fluid mb-3" />
+                    <p id="modalOverview"></p>
+
+                    <!-- Nueva sección para duración y calificación -->
+                    <p id="modalRuntime"></p>
+                    <p id="modalRating"></p>
+
+                    <button class="btn btn-danger" id="saveMovieBtn">Guardar Película</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de inicio de sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Iniciar sesión o Crear cuenta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Iniciar sesión / Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cargar el script del chatbot-->
+    <script src="chatbot.js"></script> 
+    <!-- Aquí tu script de películas -->
+    <script src="script.js"></script>
+</body>
+
+</html>
