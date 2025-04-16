@@ -1,0 +1,39 @@
+body {
+    background-color: #111;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #222;
+    border: none;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 0.5rem;
+}
+
+#searchInput {
+    border-radius: 1.5rem;
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+#loginBtn {
+    font-size: 1rem;
+}
