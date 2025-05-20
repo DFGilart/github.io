@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio |David Figuer Desarrollador Web">
+    <meta name="robots" content="index,follow">
+
+    <title>David Figuer | Desarrollador de aplicaciones multiplataforma </title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon_d.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/images/logo-df.png" alt="Logo Portafolio" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="#home" class="active">Home</a>
+            <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+            <a href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
+            <a href="#formacion" data-section="menu" data-value="item4">Formación</a>
+            <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+            <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+
+            <!-- Idiomas de la página -->
+            <div id="flags" class="flags">
+                <div class="flags__item" data-language="es">
+                    <img src="./assets/images/icon-spain.png" alt="Español/Spanish">
+                </div>
+                <div class="flags__item" data-language="en">
+                    <img src="./assets/images/icon-en.png" alt="Inglés/English">
+                </div>
+            </div>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home" id="home">
+            <picture class="container_image-home" data-aos="zoom-in">
+                <img class="image_home" src="./assets/images/imagen-home-d.png" alt="Ilustración mujer y plantas">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1" data-section="home" data-value="home_text-1">Hola! Soy</p>
+                    <p class="home_text-2">David Figuer Gilart</p>
+                </div>
+
+                <div>
+                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador de <br>aplicaciones multiplataforma</p>
+                </div>
+
+                <div class="container_parrafo-info">
+                    <p data-section="home" data-value="parrafo-info">Desarrollador de Aplicaciones Multiplataforma con formación en programación orientada a crear soluciones funcionales y adaptables. Me enfoco en desarrollar aplicaciones eficientes, usables y con una buena experiencia de usuario en distintos entornos y dispositivos.</p>
+                </div>
+
+                <div class="container_button">
+                    <a href="https://drive.google.com/file/d/1jQ8GiLVaT08szUsKPRQTBc0aSjaStLWo/view" target="_blank">
+                        <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
+                    </a>
+                    <a href="#contacto">
+                        <button class="contact_button" data-section="home" data-value="contact_button">Contacto</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/david-figuer-gilart-3b9232266/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" class="icon-linkedin">
+                </a>
+                <a href="https://github.com/davidfiguergilart" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub" class="icon-github">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-codepen.png" alt="CodePen" class="icon-CodePen">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram" class="icon-instagram">
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section class="sobreMi" id="sobreMi">
+            <h1 data-section="sobre-mi" data-value="title" data-aos="fade-up">Sobre mí</h1>
+
+            <div class="container_content-sobreMi" data-aos="fade-right">
+                <div class="container_texto-sobreMi">
+                    <span class="title_sobreMi">David Figuer</span>
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">Soy Desarrollador de Aplicaciones Multiplataforma, con formación técnica y enfoque en la creación de soluciones funcionales, intuitivas y adaptables a distintos entornos. Me especializo en construir aplicaciones que ofrecen una buena experiencia de usuario, cuidando tanto el rendimiento como la usabilidad. Me considero una persona proactiva, orientada a resultados y con ganas de seguir aprendiendo y creciendo profesionalmente en el mundo del desarrollo de software.</span>
+                </div>
+    
+                <picture class="container_image-sobreMi">
+                    <img class="image_sobreMi" src="./assets/images/image-sobremi-d.png" alt="Ilustración mujer y café">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades" id="habilidades">
+            <h1 data-section="habilidades" data-value="title" data-aos="fade-up">Habilidades</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades">
+
+            <div class="cards_container--habilidades">
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./assets/images/icon-html.png" alt="HTML">
+                    <p>HTML 5</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-css.png" alt="CSS">
+                    <p>CSS 3</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                    <img src="./assets/images/icon-js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./assets/images/android studio.png" alt="Notion">
+                    <p>Andriod studio</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./assets/images/Java.png" alt="Tailwind">
+                    <p>Java</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/cobl.jpg" alt="Git">
+                    <p>COBOL</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                    <img src="./assets/images/icon-github-hab.png" alt="GitHub">
+                    <p>Github</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./assets/images/sqlservermanagment.png" alt="Trello">
+                    <p>SQL Server</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formación -->
+        <section class="formacion" id="formacion">
+            <h1 data-section="formacion" data-value="title" data-aos="fade-up">Formación</h1>
+
+            <div class="cards_container--formacion">
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-unal" src="./assets/images/uoc_masterbrand_vertical_positiu.png" alt="Logo - Universidad Nacional de Colombia">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion1">Ingeniería infomática</p>
+                        <p data-section="formacion" data-value="tiempo-formacion1">sep-2025 - En curso</p>
+                    </div>
+                </div>
+
+                <div class="cards--formacion" data-aos="fade-up" data-aos-duration="500">
+                    <img class="logo-one" src="./assets/images/La_Salle_Santo-Angel.png" alt="Logo - ONE: Oracle Next Education">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion2">Desarrollo de aplicaciones multiplataforma</p>
+                        <p data-section="formacion" data-value="tiempo-formacion2">2023 - 2025</p>
+                    </div>
+                </div>
+
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-sena" src="./assets/images/GranVia-1.png" alt="Logo - SENA">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion3">Bachillerato de ciencias tecnológicas</p>
+                        <p>2017 - 2018</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="proyectos" id="proyectos">
+            <h1 data-section="proyectos" data-value="title" data-aos="fade-up">Proyectos</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-proyectos">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
+
+            <div class="cards_container--proyectos">
+                <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/juego_neon.png" alt="Proyecto: Juego del ahorcado">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto1">Neon Cube Dash</h2>
+                        <p data-section="proyectos" data-value="info-proyecto1">Neon Cube Dash es un juego de plataformas en 2D en el que controlas un cubo brillante que avanza automáticamente a través de un escenario lleno de obstáculos. El jugador debe puelsar intro para hacer que el cubo salte y evite bloquesy balas </p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://davidfiguergilart.github.io/juego/index.html" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/davidfiguergilart/davidfiguergilart.github.io/tree/main/juego" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/foto_portafolio.png" alt="Proyecto: Portafolio">
+                    </div>
+
+                    <div class="container_textCard--proyectos text-portafolio">
+                        <h2 data-section="proyectos" data-value="title-proyecto2">Portafolio</h2>
+                        <p data-section="proyectos" data-value="info-proyecto2">Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="#" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/davidfiguergilart/davidfiguergilart.github.io" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/focus_mate_app.png" alt="Proyecto: Encriptador">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto3">FocusMate</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">FocusMate es una aplicación web minimalista y productiva diseñada para ayudarte a gestionar el tiempo y las tareas diarias mediante la técnica Pomodoro. Ademas hay un par de funcionalidades extra para completar tus tareas y aumentar tu productividad.</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://davidfiguergilart.github.io/FocusMate/index.html" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/davidfiguergilart/davidfiguergilart.github.io/tree/main/FocusMate" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+<!-- Contacto -->
+<!-- Contacto -->
+<!-- Contacto -->
+<section class="contacto" id="contacto">
+    <h1>Contacto</h1>
+  
+    <div class="container_box--contacto">
+      <div class="container--contacto">
+        <p>Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
+  
+        <form id="form-contacto" action="https://formspree.io/f/xpwdzewq" method="POST">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+  
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+  
+          <label for="affair">Asunto</label>
+          <input type="text" id="affair" name="affair" placeholder="Motivo del mensaje" required>
+  
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+  
+          <div class="btn_form--contacto">
+            <button type="submit">Enviar ✉️</button>
+          </div>
+        </form>
+  
+        <div id="mensaje-exito" class="oculto">
+          <p>✅ ¡Mensaje enviado con éxito! Gracias por contactarme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Estilos -->
+  <style>
+    :root {
+      --color-fondo: #0e0e0e;
+      --color-texto: #ffffff;
+      --color-input-bg: #ffffff;
+      --color-boton: #d5b79f;
+      --color-boton-hover: #b89d87;
+    }
+  
+    section.contacto {
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      padding: 60px 0;
+      text-align: center;
+    }
+  
+    section.contacto h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+  
+    .container_box--contacto {
+     padding: 30px;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    max-width: 900px; /* aumentado */
+    margin: 0 auto;
+}
+
+  
+    .container--contacto p {
+      color: #aaa;
+      margin-bottom: 25px;
+      font-size: 1em;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    label {
+      text-align: left;
+      font-size: 0.95em;
+      color: #f0f0f0;
+    }
+  
+    input, textarea {
+      background-color: var(--color-input-bg);
+      color: #2a2a2a;
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 1em;
+      transition: box-shadow 0.3s ease;
+    }
+  
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px var(--color-boton);
+    }
+  
+    .btn_form--contacto {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .btn_form--contacto button {
+      background-color: var(--color-boton);
+      color: #000;
+      border: none;
+      padding: 14px 32px;
+      font-size: 1.1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .btn_form--contacto button:hover {
+      background-color: var(--color-boton-hover);
+    }
+  
+    #mensaje-exito {
+      margin-top: 20px;
+      background-color: #d1f7d6;
+      color: #2b2b2b;
+      padding: 1em;
+      border-radius: 10px;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  
+    #mensaje-exito.mostrar {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    .oculto {
+      display: none;
+    }
+  
+    @media (max-width: 600px) {
+    .container_box--contacto {
+    padding: 20px;
+    width: 95%; /* ampliado */
+  }
+}
+
+  </style>
+  
+  <!-- Script -->
+  <script>
+    const form = document.getElementById('form-contacto');
+    const mensajeExito = document.getElementById('mensaje-exito');
+  
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+  
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+  
+      if (response.ok) {
+        form.reset();
+        mensajeExito.classList.remove('oculto');
+        mensajeExito.classList.add('mostrar');
+  
+        setTimeout(() => {
+          mensajeExito.classList.remove('mostrar');
+          mensajeExito.classList.add('oculto');
+        }, 5000);
+      }
+    });
+  </script>
+  
+  
+
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                <a href="https://www.linkedin.com/in/david-figuer-gilart-3b9232266/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/davidfiguergilart" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-codepen.png" alt="CodePen" class="icon_codepen--footer">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram">
+                </a>
+            </div>
+
+            <div class="container_text--footer">
+                <span>Copyright © | Coded with</span>
+                <img src="./assets/images/icon-corazon.png" alt="Corazón">
+                <span>by</span>
+                <span>David Figuer Gilart</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js"></script>
+</body>
+</html>
