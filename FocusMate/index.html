@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusMate</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 FocusMate</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li data-section="pomodoro" class="active">Pomodoro</li>
+      <li data-section="todo">Tareas</li>
+      <li data-section="habits">Hábitos</li>
+      <li data-section="stats">Estadísticas</li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <!-- Pomodoro -->
+    <section id="pomodoro" class="active">
+      <h2>Pomodoro</h2>
+      <div class="timer">
+        <span id="time">25:00</span>
+      </div>
+      <div class="controls">
+        <button id="start-pause">▶️ Iniciar</button>
+        <button id="reset">🔁 Reiniciar</button>
+      </div>
+      <p id="session-info">Sesiones completadas: <span id="sessions">0</span></p>
+    </section>
+
+    <!-- Tareas -->
+    <section id="todo">
+      <h2>Lista de Tareas</h2>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Escribe una tarea..." required />
+        <button type="submit">➕ Añadir</button>
+      </form>
+
+      <ul id="todo-list"></ul>
+
+      <h3 style="margin-top:2rem;">TAREAS REALIZADAS ✅</h3>
+      <ul id="completed-tasks"></ul>
+    </section>
+
+    <!-- Hábitos -->
+    <section id="habits">
+      <h2>Seguimiento de Hábitos</h2>
+      <form id="habit-form">
+        <input type="text" id="habit-input" placeholder="Nuevo hábito..." required />
+        <button type="submit">➕ Añadir</button>
+      </form>
+      <div id="habits-container"></div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section id="stats">
+      <h2>Estadísticas</h2>
+      <p>Verás tu progreso en gráficas 📊</p>
+      <canvas id="pomodoroChart"></canvas>
+      <canvas id="habitsChart"></canvas>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/pomodoro.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/habits.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/stats.js"></script>
+</body>
+</html>
